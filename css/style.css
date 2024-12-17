@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --tertiary-color: #ffdd57;
+  --quaternary-color: #ddd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General Enhancements */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Form Styling */
+form {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+form .form-label {
+  color: #333;
+}
+form h1 {
+  color: #007bff;
+}
+form input {
+  border: 1px solid #ddd;
+}
+
+form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+  background-color: #007bff;
+  border: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.animation {
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.typing-text {
+  font-size: 24px;
+  font-weight: bold;
+  overflow: hidden;
+  border-right: 2px solid;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 7s steps(30, end) forwards, blink 0.5s step-end 7s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+#welcome-screen {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
