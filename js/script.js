@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
       signUpFormElement.reset();
   
       setTimeout(() => {
-        window.location.href = "home.html";
+        window.location.href = "../pages/Home.html";
       }, 1500);
     });
   }
