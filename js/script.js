@@ -226,9 +226,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   
       signUpFormElement.reset();
-  
       setTimeout(() => {
-        window.location.href = "../pages/Home.html";
+        window.location.href = "home.html";
       }, 1500);
     });
   }
@@ -259,4 +258,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   displayCart();
 });
+
 
